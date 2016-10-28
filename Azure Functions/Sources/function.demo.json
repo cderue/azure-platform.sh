@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "name": "req",
+      "webHookType": "genericJson",
+      "direction": "in"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "from": "noreply@platform.sh",
+      "direction": "out",
+      "to": "<Insert your email here>",
+      "subject": "Deploying apps with Platform.sh and Azure Functions is amazing!",
+      "text": ""
+    }
+  ],
+  "disabled": false
+}
